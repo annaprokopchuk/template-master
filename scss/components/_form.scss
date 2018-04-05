@@ -1,0 +1,143 @@
+.form {}
+.form-group {}
+.form-label {}
+.form-control {}
+.form-chekbox {}
+.form-radio {}
+
+label {
+  display: block;
+  line-height: var(--base-line-height);/*изменяемое значение*/
+  font-size: 12px;/*изменяемое значение*/
+  color: #95a5a9;/*изменяемое значение*/
+}
+
+[type='text'], [type='password'], 
+[type='date'], [type='datetime'], 
+[type='datetime-local'], [type='month'], 
+[type='week'], [type='email'], [type='number'], 
+[type='search'], [type='tel'], [type='time'], 
+[type='url'], [type='color'], select, textarea {
+  display: block;
+  width: 100%;
+  height: 35px;/*изменяемое значение*/
+  margin: 0;
+  padding: 20px 10px 3px 0;/*изменяемое значение*/
+  border: none;
+  border-bottom: 1px solid $border-color-light;/*изменяемое значение*/
+  border-radius: 0;
+  background-color: #fff;/*изменяемое значение*/
+  font-family: $base-font-family;/*изменяемое значение*/
+  font-size: 14px;/*изменяемое значение*/
+  font-weight: 400;/*изменяемое значение*/
+  color: $color-light;/*изменяемое значение*/
+}
+
+[type='text']:focus,
+[type='password']:focus,
+[type='date']:focus,
+[type='datetime']:focus,
+[type='datetime-local']:focus,
+[type='month']:focus,
+[type='week']:focus,
+[type='email']:focus,
+[type='number']:focus,
+[type='search']:focus,
+[type='tel']:focus,
+[type='time']:focus,
+[type='url']:focus,
+[type='color']:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  color: var(--input-color-focus);/*изменяемое значение*/
+  border: var(--input-border-focus);/*изменяемое значение*/
+  background-color: var(--input-background-focus);/*изменяемое значение*/
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;/*изменяемое значение*/
+  display: inline-block;
+  height: var(--input-box-size);/*изменяемое значение*/
+  width: var(--input-box-size);/*изменяемое значение*/
+  overflow: hidden;
+  vertical-align: sub;
+  background-color: var(--input-box-background);/*изменяемое значение*/
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: var(--input-box-border);
+  border-radius: var(--input-box-border-radius);/*изменяемое значение*/
+  color: var(--input-box-color);/*изменяемое значение*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type="radio"] {
+  border-radius: 50%;
+}
+
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem var(--input-box-background-checked);/*изменяемое значение*/
+}
+
+input[type="radio"]:checked,
+input[type="checkbox"]:checked,
+input[type="checkbox"]:indeterminate {
+  color: var(--input-box-color-checked);/*изменяемое значение*/
+  background-color: var(--input-box-background-checked);/*изменяемое значение*/
+  border: var(--input-box-border-checked);/*изменяемое значение*/
+}
+
+input[type="radio"]:checked:focus,
+input[type="checkbox"]:checked:focus,
+input[type="checkbox"]:indeterminate:focus {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem var(--input-box-background-checked);/*изменяемое значение*/
+}
+
+input[type="radio"]:checked {/*изменяемое значение*/
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22%23fff%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%222%22%3E%3C%2Fcircle%3E%0A%3C%2Fsvg%3E");
+}
+
+input[type="checkbox"]:checked {/*изменяемое значение*/
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+input[type="checkbox"]:indeterminate {/*изменяемое значение*/
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Crect%20fill%3D%22%23fff%22%20x%3D%223%22%20y%3D%228%22%20width%3D%2210%22%20height%3D%221%22%3E%3C%2Frect%3E%0A%3C%2Fsvg%3E");
+}
+
+input[type="range"] {
+  display: block;
+  width: 100%;
+  margin: 0;
+  height: var(--input-height);/*изменяемое значение*/
+}
+
+.form-icon {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);/*изменяемое значение*/
+}
+
+textarea {
+	resize: vertical;
+}

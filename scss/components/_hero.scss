@@ -1,0 +1,16 @@
+.hero {
+  height: 100vh; /*изменяемое значение*/
+  min-height: 620px;/*изменяемое значение*/
+  position: relative;
+  .hero-background {
+    height: 100%;
+  }
+  .hero-foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($color: #000000, $alpha: 0.3);/*изменяемое значение*/
+    z-index: 1;
+  }
+}

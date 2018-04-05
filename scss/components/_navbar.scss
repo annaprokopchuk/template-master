@@ -1,0 +1,76 @@
+.navbar {
+  min-height: calc(var(--base-line-height) * 4);/*изменяемое значение*/
+  font-size: 12px;/*изменяемое значение*/
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: var(--base-color);
+  background-color: transparent;
+  transition: background-color 0.2s;/*изменяемое значение*/
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;/*изменяемое значение*/
+  color: currentcolor;
+  img {
+    display: block;
+    object-fit: contain;
+    svg * {
+      fill: currentcolor;
+    }
+  }
+}
+.navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0;
+  list-style: none;
+  margin-left: -14px;/*изменяемое значение*/
+  margin-right: -14px;/*изменяемое значение*/
+}
+
+.navbar-nav > li {}
+
+.navbar-nav > li > a {
+  padding: 0 14px;/*изменяемое значение*/
+}
+
+.navbar-nav > li > a {
+  line-height: calc(var(--base-line-height) * 2 - 3px);/*изменяемое значение*/
+  color: var(--color-primary);/*изменяемое значение*/
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:active,
+.navbar-nav > li.is-active > a,
+.navbar-nav > li.uk-active > a {
+  color: #191a1b;/*изменяемое значение*/
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  cursor: pointer;
+  background: none;
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  vertical-align: middle;
+  position: fixed;
+  left: var(--grid-gap);
+  top: 30px;
+  z-index: 1001;
+  font-size: 1em;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  outline: none;
+}
+
+.navbar-collapse {}
